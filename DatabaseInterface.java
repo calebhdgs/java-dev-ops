@@ -8,10 +8,6 @@ import java.sql.Statement;
  *
  * @author caleb.hodges
  */
- 
-public static void main(String[] args){
-    DatabaseInterface dbInter = new DatabaseInterface();
-}
     
 public class DatabaseInterface {
     Connection con;
@@ -52,5 +48,8 @@ public class DatabaseInterface {
             System.out.println(err.getMessage());
             err.printStackTrace();
         }
+    }
+    public static void main(String[] args){
+       DatabaseInterface dbInter = new DatabaseInterface();
     }
   }
