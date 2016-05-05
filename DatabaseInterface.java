@@ -13,10 +13,6 @@ public class DatabaseInterface {
     Connection con;
     Statement st;
     
-    public static void main(String[] args){
-       DatabaseInterface dbInter = new DatabaseInterface();
-    }
-    
     public DatabaseInterface(){
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/nvt";
@@ -53,4 +49,7 @@ public class DatabaseInterface {
             err.printStackTrace();
         }
     }
+  }
+  public static void main(String[] args){
+     DatabaseInterface dbInter = new DatabaseInterface();
   }
