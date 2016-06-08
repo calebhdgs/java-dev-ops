@@ -8,7 +8,7 @@ import java.sql.Statement;
  *
  * @author caleb.hodges
  */
-    
+
 public class DatabaseInterface {
     Connection con;
     Statement st;
@@ -19,9 +19,9 @@ public class DatabaseInterface {
     
     public DatabaseInterface(){
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/nvt";
+        String url = "jdbc:mysql://10.146.13.215:3306/test";
         String user = "root";
-        String psswrd = "frisbee001";
+        String psswrd = "Frisbee001";
         try{
             Class.forName(driver);
             con = DriverManager.getConnection(url, user, psswrd);
