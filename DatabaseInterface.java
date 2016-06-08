@@ -21,7 +21,7 @@ public class DatabaseInterface {
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://10.146.13.215:3306/test";
         String user = "root";
-        String psswrd = "Frisbee001";
+        String psswrd = "_________";
         try{
             Class.forName(driver);
             con = DriverManager.getConnection(url, user, psswrd);
