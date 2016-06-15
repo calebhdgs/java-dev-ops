@@ -33,10 +33,10 @@ public class DatabaseInterface {
         }catch(ClassNotFoundException fourOfour){
             System.out.println("The driver "+fourOfour.getMessage()+" could not be found.");
         }
-        
-        public static void main(string[] args){
-            DatabaseInterface dbInter = new DatabaseInterface();
-        }
+    }
+    
+    public static void main(String[] args){
+        DatabaseInterface dbInter = new DatabaseInterface();
     }
     
     public class Thread_Class extends Thread{
@@ -44,3 +44,4 @@ public class DatabaseInterface {
             System.out.println("Did the threading thing.");
         }
     }
+}
